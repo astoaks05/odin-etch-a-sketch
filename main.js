@@ -5,3 +5,12 @@ for (let i = 0; i < 256; i++) {
     gridItem.classList.add('grid-item');
     gridContainer.appendChild(gridItem);
 }
+
+const gridPen = document.querySelector('.grid-item');
+
+const divColor = gridPen.classList.add('grid-pen');
+gridPen.addEventListener('mouseenter', divColor);
+
+
+
+
