@@ -1,0 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#f3f1f1, #b8b5b5);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
