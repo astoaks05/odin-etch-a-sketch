@@ -17,7 +17,9 @@ draw();
 //Indicates to user it's a square grid Y x Y
 function duplicateGrid() {
     let userGrid = userValue.value;
-    copyInput.textContent = "x " + userGrid;
+    if (copyInput) {
+        copyInput.textContent = "x " + userGrid;
+    }
 }
 
 //Save space and clutter on page with appear/disappearing user instructions for grid size
@@ -33,7 +35,9 @@ function makeGrid() {
         promptText.textContent = "Make sure it's a number from 2 to 99!";
     } else {
     promptText.textContent = "";
-    copyInput.textContent = "";
+    if (copyInput){
+        copyInput.textContent = "";
+    }
     userValue.value = "";
     containerDiv.innerHTML = "";
     if (number == 0 || number > 99 || number == "") {
